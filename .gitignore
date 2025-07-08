@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+
+# Credentials et tokens
+credentials/credentials.json
+token.json
+
+# Fichiers d'environnement
+.env
+
+# Autres fichiers de configuration sensibles
+config/*.json
+credentials.json
+
+# Configs éditeur / IDE
+.vscode/
+*.iml
