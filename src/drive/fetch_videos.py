@@ -1,5 +1,5 @@
 def get_video_files(service, folder_id=None):
-    query = "mimeType contains 'video/'"
+    query = "mimeType contains 'video/' and trashed = false"  # exclude trashed files
     if folder_id:
         query += f" and '{folder_id}' in parents"
     results = service.files().list(
