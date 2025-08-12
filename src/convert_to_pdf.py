@@ -1,6 +1,7 @@
 from logging import config
 import pdfkit
 
+config = pdfkit.configuration(wkhtmltopdf=r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe')
 
 def convert_html_to_pdf(html_content: str, output_path: str, video_name: str):
     try:
